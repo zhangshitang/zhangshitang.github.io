@@ -1,38 +1,7 @@
 ---
-title: Hello World
+title: 网站介绍
+tags: 介绍
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+我会在这个网站放入我的编程博客，编程教学，以及我个人资料，供大家学习浏览。在浏览过程中遇到问题，或者想学习的知识，可以通过发送邮件到我的个人邮箱 zhangxinhero@outlook.com 进行探讨。我的所有教学代码都可以通过访问github下载查看，欢迎大家Start，各种项目代码连接将会在以后跟新。  
+I will put my programming blog, programming teaching and my personal information on this website for everyone to learn and browse. If you encounter problems during browsing or want to learn knowledge, you can send an email to my personal email zhangxinhero@outlook.com Discuss. All my teaching codes can be downloaded and viewed by visiting GitHub. Welcome to start. All project code connections will be updated in the future.
 
-## 快速开始
-
-### Create a new post
-
-``` bash
-$ hexo new "My New Post"
-```
-
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Run server
-
-``` bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
