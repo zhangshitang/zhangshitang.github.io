@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>网站介绍</title>
+      <link href="/2022/07/22/hello-world/"/>
+      <url>/2022/07/22/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>我会在这个网站放入我的编程博客，编程教学，以及我个人资料，供大家学习浏览。在浏览过程中遇到问题，或者想学习的知识，可以通过发送邮件到我的个人邮箱 <a href="mailto:&#122;&#104;&#x61;&#x6e;&#x67;&#120;&#x69;&#110;&#104;&#101;&#114;&#111;&#x40;&#x6f;&#117;&#116;&#108;&#111;&#111;&#x6b;&#x2e;&#x63;&#111;&#x6d;">&#122;&#104;&#x61;&#x6e;&#x67;&#120;&#x69;&#110;&#104;&#101;&#114;&#111;&#x40;&#x6f;&#117;&#116;&#108;&#111;&#111;&#x6b;&#x2e;&#x63;&#111;&#x6d;</a> 进行探讨。我的所有教学代码都可以通过访问github下载查看，欢迎大家Start，各种项目代码连接将会在以后跟新。<br>I will put my programming blog, programming teaching and my personal information on this website for everyone to learn and browse. If you encounter problems during browsing or want to learn knowledge, you can send an email to my personal email <a href="mailto:&#122;&#x68;&#x61;&#110;&#103;&#120;&#105;&#x6e;&#104;&#x65;&#x72;&#111;&#x40;&#111;&#x75;&#116;&#x6c;&#111;&#x6f;&#x6b;&#46;&#99;&#x6f;&#109;">&#122;&#x68;&#x61;&#110;&#103;&#120;&#105;&#x6e;&#104;&#x65;&#x72;&#111;&#x40;&#111;&#x75;&#116;&#x6c;&#111;&#x6f;&#x6b;&#46;&#99;&#x6f;&#109;</a> Discuss. All my teaching codes can be downloaded and viewed by visiting GitHub. Welcome to start. All project code connections will be updated in the future.</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 介绍 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>npm浏览器代理设置</title>
+      <link href="/2022/07/22/npm/"/>
+      <url>/2022/07/22/npm/</url>
+      
+        <content type="html"><![CDATA[<p>设置npm 浏览器代理</p><pre><code>npm config set proxy=http:</code></pre><p>取消npm 浏览器代理</p><pre><code>npm config delete proxy</code></pre><p>npm设置淘宝镜像 npm </p><pre><code>config set registry=https://registry.npm.taobao.org</code></pre><p>npm取消淘宝镜像</p><pre><code>npm config delete registry</code></pre><p>查看代理信息（当前配置） </p><pre><code>npm config list</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> npm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
