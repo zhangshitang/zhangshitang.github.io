@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
-        <title>About | 张轼棠个人页面</title>
+        <title>Npm浏览器代理设置 | 张轼棠个人页面</title>
         <meta name="author" content="张轼棠">
         <meta name="description" content="">
         <meta name="keywords" content="简历 博客 张轼棠">
@@ -120,25 +120,56 @@
                         
 <div class="article">
     <div>
-        <h1>About </h1>
+        <h1>Npm浏览器代理设置 </h1>
     </div>
     <div class="info">
         <span class="date">
             <span class="icon">
                 <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
             </span>
-            2018/9/30
+            2022/7/22
+        </span>
+        
+        <span class="category">
+            <a href="/categories/前端">
+                <span class="icon">
+                    <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
+                </span>
+                前端
+            </a>
         </span>
         
         
+        <span class="tags">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/npm" style="color: #00a596">
+                    npm
+                </a>
+            </span>
+            
+        </span>
+        
     </div>
     <div class="content" v-pre>
-        <h1 id="asdfasdfas"><a href="#asdfasdfas" class="headerlink" title="asdfasdfas"></a>asdfasdfas</h1><h2 id="afasdfsa"><a href="#afasdfsa" class="headerlink" title="afasdfsa"></a>afasdfsa</h2><pre><code>afadsa
-adf
-asdf
-adfadsfas
-···
-··
+        <p>设置npm 浏览器代理</p>
+<pre><code>npm config set proxy=http:
+</code></pre>
+<p>取消npm 浏览器代理</p>
+<pre><code>npm config delete proxy
+</code></pre>
+<p>npm设置淘宝镜像 npm </p>
+<pre><code>config set registry=https://registry.npm.taobao.org
+</code></pre>
+<p>npm取消淘宝镜像</p>
+<pre><code>npm config delete registry
+</code></pre>
+<p>查看代理信息（当前配置） </p>
+<pre><code>npm config list
 </code></pre>
 
     </div>
