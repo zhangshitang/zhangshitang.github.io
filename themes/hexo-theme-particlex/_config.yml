@@ -18,23 +18,23 @@ home_background:
 
 # main menu navigation
 menu:
-    home:
+    首页:
         name: house
         theme: solid
         src: /
-    about:
+    我:
         name: id-card
         theme: solid
         src: /about
-    archives:
+    文章:
         name: box-archive
         theme: solid
         src: /archives
-    categories:
+    归档:
         name: bookmark
         theme: solid
         src: /categories
-    tags:
+    标签:
         name: tags
         theme: solid
         src: /tags

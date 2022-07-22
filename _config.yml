@@ -112,3 +112,4 @@ theme: hexo-theme-particlex
 deploy:
   type: 'git'
   repo: 'git@github.com:zhangshitang/zhangshitang.gitHub.io.git'
+  branch: gh-pages
