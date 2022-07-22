@@ -3,13 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: '我的小窝'
-subtitle: '欢迎来到张轼棠个人页面'
+title: '张轼棠个人页面'
+subtitle: '我的小窝'
 description: ''
 keywords: '简历 博客 张轼棠'
 author: '张轼棠'
 language: 'zh-CN'
 timezone: 'Asia/Shanghai'
+
+search:
+  path: search.xml
+  field: post
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -44,7 +48,8 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
+  #enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace: ''
@@ -98,7 +103,9 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 ##theme: landscape
-theme: hexothemematery
+#theme: hexothemematery
+#theme: keep
+theme: hexo-theme-particlex
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
