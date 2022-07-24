@@ -9,7 +9,11 @@ layout: "about"
 QQ：747940063  
 电话：15210101211  
 Email：zhangxinhero@outlook.com  
-
+## 技术栈
+    熟练(能独立设计框架开发业务)：NetCore(C#) NetMvc(C#) Jquery(JS) Angular(Ts) Vue(JS) Mysql(SQL) Oracle(SQL) 
+    掌握（能在现有框架下实现业务代码和维护）：SpringMvc(Java) OpenCV(C++) 
+    其他技能：Linux环境部署 Window环境部署 Redis Tomato IIS Docker Npm
+    Nginx
 ## 项目经历
 ### 新疆油田某采油厂单井检测预警系统
 ```
@@ -41,9 +45,9 @@ Email：zhangxinhero@outlook.com
 项目简介
     本项目的主要工作就是通过与实际生产结合的测试工作，建立一套适合采油九厂、采油五厂和呼伦贝尔分公司在生产实际生产中出现的工况类型和主控因素分析方法，完善并丰富功图诊断特征库，并通过基于机器学习与大数据分析等技术，提升工况诊断的准确性。同时，在工况诊断准确的基础上，根据不同的单井工况、准确的历史产液量以及对应的示功图建立单井大数据量液算法模型，提升功图量液准确性，为大庆油田全面的信息化建设推广工作奠定基础。
 所用技术：
-    OpenCV NetMvc5 Echar EasyUI Redis Oracle集群
+    OpenCV NetMvc5 Echar EasyUI Redis Oracle集群 SpringCloud
 编程语言：
-    C++ C# JS Sql html
+    C++ C# JS Sql html Java8
 负责内容：
     根据现有框架技术和采油厂实际需求，二次开发业务逻辑，部署数据库，后台算法和前端代码。
 ```
