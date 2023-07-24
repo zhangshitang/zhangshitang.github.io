@@ -5,13 +5,13 @@
 language: zh
 
 # avatar image url
-head_img:
+head_img: /img/zx.jpg
 
 # home page head info block
 head_block_enable: true
 
 # home page head background style.
-home_background:
+home_background: /img/home_background.jpg
 
 # ParticleX theme icon is adopts the font awesome 6
 # Link: https://fontawesome.com/search/
