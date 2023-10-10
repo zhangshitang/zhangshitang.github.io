@@ -111,5 +111,5 @@ theme: hexo-theme-particlex
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo: 'git@github.com:zhangshitang/zhangshitang.gitHub.io.git'
+  repo: 'https://github.com/zhangshitang/zhangshitang.gitHub.io.git'
   branch: gh-pages
