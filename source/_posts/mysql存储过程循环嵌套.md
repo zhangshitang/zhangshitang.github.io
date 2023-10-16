@@ -1,6 +1,6 @@
 ---
 title: mysql存储过程
-date: 2023-10-06 08:47:00
+date: 2023-10-16 08:47:00
 excerpt: mysql存储过程
 tags: [mysql]
 categories: mysql
