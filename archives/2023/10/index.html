@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
-        <title>Docker安装mysql | 张轼棠个人页面</title>
+        <title>Archives | 张轼棠个人页面</title>
         <meta name="author" content="张轼棠">
         <meta name="description" content="">
         <meta name="keywords" content="简历 博客 张轼棠">
@@ -118,82 +118,138 @@
                     </div>
                     <div id="main">
                         
-<div class="article">
-    <div>
-        <h1>Docker安装mysql </h1>
-    </div>
-    <div class="info">
-        <span class="date">
-            <span class="icon">
-                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
-            </span>
-            2022/7/22
-        </span>
-        
-        <span class="category">
-            <a href="/categories/docker">
-                <span class="icon">
-                    <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
-                </span>
-                docker
+<div id="archives">
+    
+    <div class="timeline">
+        <div class="timeline-tail"></div>
+        <div class="timeline-content">
+            <div class="item-time">2023/10/6</div>
+            <a href="/2023/10/06/mysql存储过程循环嵌套/">
+                <h3>mysql存储过程</h3>
             </a>
-        </span>
-        
-        
-        <span class="tags">
-            <span class="icon">
-                <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
-            </span>
-            
-            <span class="tag">
+            <div class="info">
                 
-                <a href="/tags/docker" style="color: #00bcd4">
-                    docker
-                </a>
-            </span>
-            
-            <span class="tag">
+                <span class="category">
+                    <a href="/categories/mysql">
+                        <span class="icon">
+                            <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
+                        </span>
+                        mysql
+                    </a>
+                </span>
                 
-                <a href="/tags/mysql" style="color: #ffa2c4">
-                    mysql
-                </a>
-            </span>
-            
-        </span>
-        
+                
+                <span class="tags">
+                    <span class="icon">
+                        <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
+                    </span>
+                    
+                    <span class="tag">
+                        
+                        <a href="/tags/mysql" style="color: #03a9f4">
+                            mysql
+                        </a>
+                    </span>
+                    
+                </span>
+                
+            </div>
+        </div>
     </div>
-    <div class="content" v-pre>
-        <h2 id="Docker-安装-MySQL"><a href="#Docker-安装-MySQL" class="headerlink" title="Docker 安装 MySQL"></a>Docker 安装 MySQL</h2><p>MySQL 是世界上最受欢迎的开源数据库。凭借其可靠性、易用性和性能，MySQL 已成为 Web 应用程序的数据库优先选择。</p>
-<h3 id="1、查看可用的-MySQL-版本"><a href="#1、查看可用的-MySQL-版本" class="headerlink" title="1、查看可用的 MySQL 版本"></a>1、查看可用的 MySQL 版本</h3><p>访问 MySQL 镜像库地址：<a target="_blank" rel="noopener" href="https://hub.docker.com/_/mysql?tab=tags">https://hub.docker.com/_/mysql?tab=tags</a> 。</p>
-<p>此外，我们还可以用 docker search mysql 命令来查看可用版本：</p>
-<pre><code>docker search mysql
-NAME                     DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
-mysql                    MySQL is a widely used, open-source relati...   2529      [OK]       
-mysql/mysql-server       Optimized MySQL Server Docker images. Crea...   161                  [OK]
-centurylink/mysql        Image containing mysql. Optimized to be li...   45                   [OK]
-sameersbn/mysql                                                          36                   [OK]
-google/mysql             MySQL server for Google Compute Engine          16                   [OK]
-appcontainers/mysql      Centos/Debian Based Customizable MySQL Con...   8                    [OK]
-marvambass/mysql         MySQL Server based on Ubuntu 14.04              6                    [OK]
-drupaldocker/mysql       MySQL for Drupal                                2                    [OK]
-azukiapp/mysql           Docker image to run MySQL by Azuki - http:...   2                    [OK]
-...
-</code></pre>
-<h3 id="2、拉取-MySQL-镜像"><a href="#2、拉取-MySQL-镜像" class="headerlink" title="2、拉取 MySQL 镜像"></a>2、拉取 MySQL 镜像</h3><p>这里我们拉取官方的最新版本的镜像：</p>
-<pre><code>docker pull mysql:latest
-</code></pre>
-<h3 id="3、查看本地镜像"><a href="#3、查看本地镜像" class="headerlink" title="3、查看本地镜像"></a>3、查看本地镜像</h3><p>使用以下命令来查看是否已安装了 mysql：</p>
-<pre><code>docker images
-</code></pre>
-<p>在上图中可以看到我们已经安装了最新版本（latest）的 mysql 镜像。</p>
-<h3 id="4、运行容器"><a href="#4、运行容器" class="headerlink" title="4、运行容器"></a>4、运行容器</h3><p>安装完成后，我们可以使用以下命令来运行 mysql 容器：</p>
-<pre><code>docker run -itd --name mysql-test -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql
-</code></pre>
-<p>参数说明：</p>
-<p>-p 3306:3306 ：映射容器服务的 3306 端口到宿主机的 3306 端口，外部主机可以直接通过 宿主机ip:3306 访问到 MySQL 的服务。<br>MYSQL_ROOT_PASSWORD&#x3D;123456：设置 MySQL 服务 root 用户的密码。</p>
-<h3 id="5、安装成功"><a href="#5、安装成功" class="headerlink" title="5、安装成功"></a>5、安装成功</h3><p>通过 docker ps 命令查看是否安装成功：</p>
-<p>本机可以通过 root 和密码 123456 访问 MySQL 服务。</p>
-
+    
+    <div class="timeline">
+        <div class="timeline-tail"></div>
+        <div class="timeline-content">
+            <div class="item-time">2022/7/22</div>
+            <a href="/2022/07/22/docker安装mysql/">
+                <h3>docker安装mysql</h3>
+            </a>
+            <div class="info">
+                
+                <span class="category">
+                    <a href="/categories/docker">
+                        <span class="icon">
+                            <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
+                        </span>
+                        docker
+                    </a>
+                </span>
+                
+                
+                <span class="tags">
+                    <span class="icon">
+                        <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
+                    </span>
+                    
+                    <span class="tag">
+                        
+                        <a href="/tags/docker" style="color: #ff7d73">
+                            docker
+                        </a>
+                    </span>
+                    
+                    <span class="tag">
+                        
+                        <a href="/tags/mysql" style="color: #00bcd4">
+                            mysql
+                        </a>
+                    </span>
+                    
+                </span>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="timeline">
+        <div class="timeline-tail"></div>
+        <div class="timeline-content">
+            <div class="item-time">2022/7/22</div>
+            <a href="/2022/07/22/npm浏览器代理设置/">
+                <h3>npm浏览器代理设置</h3>
+            </a>
+            <div class="info">
+                
+                <span class="category">
+                    <a href="/categories/前端">
+                        <span class="icon">
+                            <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
+                        </span>
+                        前端
+                    </a>
+                </span>
+                
+                
+                <span class="tags">
+                    <span class="icon">
+                        <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
+                    </span>
+                    
+                    <span class="tag">
+                        
+                        <a href="/tags/npm" style="color: #03a9f4">
+                            npm
+                        </a>
+                    </span>
+                    
+                </span>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="timeline">
+        <div class="timeline-tail"></div>
+        <div class="timeline-content">
+            <div class="item-time">2022/7/16</div>
+            <a href="/2022/07/16/hello-world/">
+                <h3>网站介绍</h3>
+            </a>
+            <div class="info">
+                
+                
+            </div>
+        </div>
     </div>
     
 </div>
